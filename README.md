@@ -89,12 +89,12 @@ These could be added later as optional “house rules” or advanced gameplay fe
 ## Future Improvements
 focus on these in order:
 
-# 1. Fix Core Architecture
+### 1. Fix Core Architecture
 Standardize players data structure (use dict consistently)
 Separate game state, logic, and UI (even if CLI-based)
 Break large methods into smaller, testable functions
 
-# 2. Stabilize Game Loop
+### 2. Stabilize Game Loop
 Clean up turn flow:
 Reinforcement
 Attack
@@ -104,34 +104,34 @@ Skip phases
 End turn cleanly
 Fix infinite loops and edge cases
 
-# 3. Fix Combat System
+### 3. Fix Combat System
 Align attack logic with official rules:
 Max 3 dice attacker / 2 defender
 Proper dice comparisons
 Fix function signature mismatch in attack()
 
-# 4. Validate Map Integrity
+### 4. Validate Map Integrity
 Ensure all territories exist and match adjacency map
 Fix missing references (e.g. Afghanistan inconsistencies)
 Consider moving map data to external JSON file
 
-# 5. Improve AI
+### 5. Improve AI
 Replace random behavior with:
 Threat evaluation
 Territory prioritization
 Strategic reinforcement
 Add difficulty levels
 
-# 6. Add CLI UX Improvements
+### 6. Add CLI UX Improvements
 Clearer prompts and feedback
 Display current game state (territories, troop counts)
 Show player summaries each turn
 
-# 7. Add Save/Load System
+### 7. Add Save/Load System
 Serialize game state to file
 Allow resume of long matches
 
-# 8. Optional Advanced Features
+### 8. Optional Advanced Features
 (ONLY after core game is stable)
 House rules (alliances, diplomacy)
 Multiplayer support
